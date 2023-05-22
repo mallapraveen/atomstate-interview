@@ -1,7 +1,5 @@
 import os
 
-port = os.getenv("PORT", default=8000)
-
 import streamlit as st
 from qa import qa
 

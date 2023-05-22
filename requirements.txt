@@ -1,4 +1,5 @@
 torch
+pydantic
 six
 wrapt
 h5py
