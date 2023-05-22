@@ -25,6 +25,11 @@ class QAHuggingFace(BaseModel):
     context: str
 
 
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+
 @app.post("/qa")
 async def root(qa_hf: QAHuggingFace):
     question = qa_hf.question
